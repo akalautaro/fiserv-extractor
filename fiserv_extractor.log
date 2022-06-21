@@ -1,0 +1,3 @@
+10:38:44 AM: INFO [extractor.py:36] Initialize FiservExtractor with url: https://www.fiserv.com.ar/
+10:38:45 AM: INFO [extractor.py:66] Webdriver initialized successfully
+10:39:21 AM: INFO [extractor.py:36] Initialize FiservExtractor with url: https://www.fiserv.com.ar/

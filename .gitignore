@@ -1,0 +1,4 @@
+.idea
+venv
+liquidacion/__pycache__
+src/__pycache__
