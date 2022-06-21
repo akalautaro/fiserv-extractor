@@ -11,11 +11,3 @@ log.basicConfig(
     handlers=[log.FileHandler(f'{BASE_DIR}/fiserv_extractor.log'), log.StreamHandler()]
     )
 
-
-if __name__ == "__main__":
-
-    log.debug('Mensaje a nivel debug')
-    log.info('Mensaje a nivel info')
-    log.warning('Mensaje a nivel warning')
-    log.error('Mensaje a nivel error')
-    log.critical('Mensaje a nivel critical')

@@ -27,9 +27,6 @@ class FiservExtractor:
     URL = 'https://www.fiserv.com.ar/'
 
     def __init__(self, url: str=URL, number_of_files: int=5):
-        """ Pasar todo el inicio del webdriver de la función extract_files al método init. 
-        Luego pasar el objeto driver a la función extract_files
-        """
         try:
             self.url = url
             self.number_of_files = number_of_files + 1
@@ -42,7 +39,7 @@ class FiservExtractor:
         """ Function that initialize a webdriver an interact with Fiserv, dowloading files using Selenium.
 
         Args:
-            detach_exec (bool, optional): flag that allow executing the webdriver on screen. Good for testing. 
+            detach_exec (bool, optional): flag that allow executing the webdriver on screen (good for testing). 
             Defaults to False.
         """
 
@@ -88,7 +85,6 @@ class FiservExtractor:
             log.info('Popup closed')
         except Exception as e:
             log.error(f'Error closing popup: {e}')
-            sys.exit(1)
 
         time.sleep(20)
 
@@ -144,9 +140,6 @@ class FiservExtractor:
 
         time.sleep(20)
 
-        # Puedo hacer refactor para evitar tanto ciclo for
-        # download_available = driver.find_elements(By.XPATH, '//*[@id="componenteFiltroMovimiento"]/div[11]/div/div[1]/md-table-container/table/tbody/tr')  # last 5 liqs
-        # print(download_available.text)
         for num in range(1, self.number_of_files):
             file_name = driver.find_element(
                 By.XPATH, 
