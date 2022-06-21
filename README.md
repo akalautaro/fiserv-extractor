@@ -23,7 +23,7 @@ First, we need to install all the necessary packages and libs on our system or i
 
 `pip install -r requirements.txt`
 
-Config our credentials on a `config.ini` file, located on root project dir. You have an [example](config_example.ini) here to look the file structure.
+Config your credentials on a `config.ini` file, located on root project dir. You have an [example](config_example.ini) here to look the file structure.
 
 Note: the logger can be configured as desired on [base_logger.py](src/base_logger.py) file
 
