@@ -14,7 +14,7 @@ from selenium.webdriver.chrome.options import Options
 from base_logger import log
 
 BASE_DIR = Path(os.path.abspath(os.path.dirname(__file__))).parent.absolute()
-DATA_DIR = f'{BASE_DIR}/data'
+DATA_DIR = rf'{BASE_DIR}\data'
 
 
 class FiservExtractor:
